@@ -1,0 +1,40 @@
+// Font Colors
+
+.clr-white {
+  color: white;
+}
+
+.clr-desat-blue {
+  color: var(--clr-desat-blue);
+}
+
+// Background Colors
+
+.bg-blue {
+  background-color: var(--clr-blue);
+}
+
+.bg-dark-blue {
+  background-color: var(--clr-dark-blue);
+}
+
+.bg-v-dark-blue {
+  background-color: var(--clr-v-dark-blue);
+}
+
+// Rounded Corners
+
+.rounded-corners {
+  border-radius: 1rem;
+}
+
+// Misc
+
+.hide-vis {
+  position: absolute;
+  top: -99999px;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

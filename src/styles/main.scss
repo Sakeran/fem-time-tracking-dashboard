@@ -1,0 +1,32 @@
+// Resets
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Custom Properties, Default Values
+:root {
+  // UI Colors
+  --clr-blue: hsl(246, 80%, 60%);
+
+  --clr-v-dark-blue: hsl(226, 43%, 10%);
+  --clr-dark-blue: hsl(235, 46%, 20%);
+  --clr-desat-blue: hsl(235, 45%, 61%);
+  --clr-pale-blue: hsl(236, 100%, 87%);
+
+  // Task Category Colors
+  --clr-category-work: hsl(15, 100%, 70%);
+  --clr-category-play: hsl(195, 74%, 62%);
+  --clr-category-study: hsl(348, 100%, 68%);
+  --clr-category-exercise: hsl(145, 58%, 55%);
+  --clr-category-social: hsl(264, 64%, 52%);
+  --clr-category-self-care: hsl(43, 84%, 65%);
+
+  // Font
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+
+// Utilities
+@import "./utilities.scss";
