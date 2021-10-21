@@ -71,7 +71,6 @@
 
 .rounded-corners {
   border-radius: 1rem;
-
 }
 
 // User Icons
@@ -81,8 +80,10 @@
   border-radius: 50%;
   border: 3px solid white;
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 768px) {
     width: 4.75rem;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -130,7 +131,6 @@
   background-color: var(--clr-category-play);
   background-image: url("/images/icon-play.svg");
 }
-
 
 // Misc
 
