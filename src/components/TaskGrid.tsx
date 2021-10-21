@@ -1,13 +1,28 @@
-export interface TaskGridProps {
+import "./TaskGrid.scss";
 
-}
+import TaskGridControlPanel from "./TaskGridControlPanel";
+import TaskGridCard from "./TaskGridCard";
+
+export interface TaskGridProps {}
 
 export default function TaskGrid(props: TaskGridProps) {
   return (
-    <div>
-      Task Grid
+    <div class="task-grid">
+      <TaskGridControlPanel
+        user={{
+          displayName: "Jeremy Robson",
+          displayIconHref: "/images/image-jeremy.png",
+        }}
+      />
+
+      <TaskGridCard />
+      <TaskGridCard />
+      <TaskGridCard />
+      <TaskGridCard />
+      <TaskGridCard />
+      <TaskGridCard />
     </div>
-  )
+  );
 }
 
 // Sample Data
