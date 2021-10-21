@@ -15,12 +15,12 @@ export default function TaskGrid(props: TaskGridProps) {
         }}
       />
 
-      <TaskGridCard />
-      <TaskGridCard />
-      <TaskGridCard />
-      <TaskGridCard />
-      <TaskGridCard />
-      <TaskGridCard />
+      <TaskGridCard title="Work" intervalName="Day" currentHours={32} previousHours={36} backgroundClass="work" />
+      <TaskGridCard title="Play" intervalName="Day" currentHours={10} previousHours={36} backgroundClass="play" />
+      <TaskGridCard title="Study" intervalName="Day" currentHours={4} previousHours={7} backgroundClass="study" />
+      <TaskGridCard title="Exercise" intervalName="Day" currentHours={4} previousHours={5} backgroundClass="exercise" />
+      <TaskGridCard title="Social" intervalName="Day" currentHours={5} previousHours={10} backgroundClass="social" />
+      <TaskGridCard title="Self-Care" intervalName="Day" currentHours={2} previousHours={2} backgroundClass="self-care" />
     </div>
   );
 }
