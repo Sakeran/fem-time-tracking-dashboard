@@ -3,4 +3,18 @@
 
   grid-template-columns: 1fr;
   gap: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+
+    .tg-control-panel {
+      grid-row: span 2;
+      align-self: stretch;
+    }
+
+    .tg-card:nth-child(2) {
+      grid-column-start: 1;
+    }
+  }
 }

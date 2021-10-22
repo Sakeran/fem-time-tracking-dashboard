@@ -9,6 +9,15 @@
       flex-direction: column;
       gap: 4px;
     }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .tg-display-name {
+        font-size: 2.5rem;
+      }
+    }
   }
 
   &_interval-select {
@@ -30,6 +39,17 @@
 
       &:hover, &:focus, &[data-selected] {
         color: white;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem 2rem;
+      gap: 1rem;
+
+      button {
+        padding: 0.5rem;
       }
     }
   }
