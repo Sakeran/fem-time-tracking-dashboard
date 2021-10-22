@@ -20,7 +20,7 @@ export default function TaskGridCard(props: TaskGridCardProps) {
     <div className={wrapperClasses}>
       <div className="tgc-content rounded-corners">
         <h2 className="tgc-title size-m">{props.title}</h2>
-        <p className="tgc-current-hours">{props.currentHours}hrs</p>
+        <p className="tgc-current-hours weight-light">{props.currentHours}hrs</p>
         <p className="tgc-previous-hours clr-pale-blue">Last {props.intervalName} - {props.previousHours}hrs</p>
         <button className="tgc-options">
           <span className="hide-vis">Options for Work</span>

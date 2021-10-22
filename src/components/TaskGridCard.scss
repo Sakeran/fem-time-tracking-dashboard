@@ -18,6 +18,15 @@
     "currentHrs previousHrs";
   row-gap: 1rem;
 
+  @media screen and (min-width: 1140px) {
+    grid-template-areas: 
+    "title options"
+    "currentHrs currentHrs"
+    "previousHrs previousHrs";
+
+    row-gap: 0.5rem;
+  }
+
   &:hover, &:focus {
     background-color: hsl(235, 41%, 34%);
   }
@@ -31,12 +40,23 @@
   .tgc-current-hours {
     grid-area: currentHrs;
     align-self: center;
+
+    font-size: 2rem;
+
+    @media screen and (min-width: 1140px) {
+      font-size: 3.5rem;
+      padding-top: 1rem;
+    }
   }
   
   .tgc-previous-hours {
     grid-area: previousHrs;
     justify-self: end;
     align-self: center;
+
+    @media screen and (min-width: 1140px) {
+      justify-self: start;
+    }
   }
   
   .tgc-options {
@@ -48,14 +68,13 @@
     border: none;
     cursor: pointer;
 
+    display: flex;
+    align-items: center;
+    
     color: var(--clr-pale-blue);
 
     &:hover, &:focus {
       color: white;
     }
-  }
-
-  .tgc-current-hours {
-    font-size: 2rem;
   }
 }

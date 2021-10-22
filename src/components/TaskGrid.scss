@@ -17,4 +17,17 @@
       grid-column-start: 1;
     }
   }
+
+  @media screen and (min-width: 1140px) {
+    grid-template-columns: repeat(12, 1fr);
+
+    .tg-card:nth-child(2) {
+      grid-column: span 3;
+    }
+
+    .tg-control-panel, .tg-card {
+      grid-column: span 3;
+    }
+
+  }
 }
