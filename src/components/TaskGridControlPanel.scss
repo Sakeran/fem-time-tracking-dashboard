@@ -38,7 +38,7 @@
       
       cursor: pointer;
 
-      &:hover, &:focus, &[data-selected] {
+      &:hover, &:focus, &[data-selected="true"] {
         color: white;
       }
     }

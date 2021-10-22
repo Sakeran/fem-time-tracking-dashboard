@@ -7,10 +7,14 @@ export interface UserInfo {
 
 export interface TaskGridControlPanelProps {
   user: UserInfo;
+  period: () => string;
+  setPeriod: (any) => void;
 }
 
 export default function TaskGridControlPanel({
   user,
+  period,
+  setPeriod
 }: TaskGridControlPanelProps) {
   return (
     <div class="tg-control-panel bg-dark-blue rounded-corners">
@@ -27,9 +31,9 @@ export default function TaskGridControlPanel({
       </div>
 
       <div className="tg-control-panel_interval-select">
-        <button>Daily</button>
-        <button>Weekly</button>
-        <button>Monthly</button>
+        <button onClick={() => setPeriod("daily")} data-selected={period() === "daily"}>Daily</button>
+        <button onClick={() => setPeriod("weekly")} data-selected={period() === "weekly"}>Weekly</button>
+        <button onClick={() => setPeriod("monthly")} data-selected={period() === "monthly"}>Monthly</button>
       </div>
     </div>
   );
