@@ -1,42 +1,14 @@
-# Welcome to [Astro](https://astro.build)
+# fem-time-tracking-dashboard
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/snowpackjs/astro/tree/latest/examples/starter)
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Notes
 
-## 🚀 Project Structure
+(October 23rd, 2021)
 
-Inside of your Astro project, you'll see the following folders and files:
+I decided to try out SolidJS for the first time with this exercise. While I still don't know enough about it to tell if I like it, my previous experience with other JSX-based tools made it quite easy to pick up. As for the challenge itself, I didn't run into any major issues in its implementation, though I did need to pause to think through the "overlap" layout effect on each of the card components. 
 
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Previously my instinct would have been to achieve something like this with psuedo elements, but that approach falls short when you require a box with actual content in it. It took some amount of reevaluation to hit on the idea of treating the "background" section as a containing parent. If I'm taking anything away from this exercise, it's going to be that.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+[A live version of this project can be found here.](https://obsequious-camp.surge.sh/)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command         | Action                                      |
-|:----------------|:--------------------------------------------|
-| `npm install`   | Installs dependencies                       |
-| `npm run dev`   | Starts local dev server at `localhost:3000` |
-| `npm run build` | Build your production site to `./dist/`     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/snowpackjs/astro) or jump into our [Discord server](https://astro.build/chat).
